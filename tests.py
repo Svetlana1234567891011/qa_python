@@ -33,7 +33,7 @@ class TestBooksCollector:
 
         ]
     )
-    def test_add_new_book(self, name):
+    def test_negative_add_new_book(self, name):
         collector = BooksCollector()
         collector.add_new_book(name)
         assert not collector.get_books_genre()
